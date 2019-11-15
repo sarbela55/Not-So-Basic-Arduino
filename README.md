@@ -11,7 +11,7 @@ End Result:
 Challenges: I had trouble coding this assignment, as I had rarely used functions. I had the code right, and all of the right data was
 printing on the serial monitor, but it still wasn't working. I had to check back through everything just to find out that my arduino wasn't
 working! This assignment took me the longest out of all of the assignments, probably because I had trouble focusing and I got very 
-frustrated when I got stuck.
+frustrated when I got stuck
 -------------------------------------------------------------------------------------------------------------------------------------------
 Assignment #2: New Ping
 
