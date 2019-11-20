@@ -18,4 +18,4 @@ Picture credit- Arduino.com
 -------------------------------------------------------------------------------------------------------------------------------------------
 Assignment #2: New Ping
 
-I HAVE NOT YET COMPLETED NEW PING, ITS A WORK IN PROGRESS
+Focus: In this assignment I used a different type and sequence of code to do the same thing as the past assignment. I used it to move the servo a certian distance, but you can use it to do many things, like blink a light or something. 
