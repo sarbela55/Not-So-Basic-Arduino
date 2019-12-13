@@ -8,6 +8,7 @@ breadboard, and ultrasonic sensor. The function loop states that if the ultrason
 distance.
 
 End Result:![ultrasonic](https://hackster.imgix.net/uploads/attachments/208605/radar.jpg?auto=compress%2Cformat&w=900&h=675&fit=min)
+credit goes to [Arduino.com](https://create.arduino.cc/projecthub/bharathrao64/ultrasonic-ranging-using-arduino-and-processing-radar-4091b4)
 
 Challenges: I had trouble coding this assignment, as I had rarely used functions. I had the code right, and all of the right data was
 printing on the serial monitor, but it still wasn't working. I had to check back through everything just to find out that my arduino wasn't
@@ -19,3 +20,7 @@ Picture credit- Arduino.com
 Assignment #2: New Ping
 
 Focus: In this assignment I used a different type and sequence of code to do the same thing as the past assignment. I used it to move the servo a certian distance, but you can use it to do many things, like blink a light or something. 
+
+End result:![ultrasonic](https://hackster.imgix.net/uploads/attachments/208605/radar.jpg?auto=compress%2Cformat&w=900&h=675&fit=min)
+credit goes to [Arduino.com](https://create.arduino.cc/projecthub/bharathrao64/ultrasonic-ranging-using-arduino-and-processing-radar-4091b4)
+Challenges:
