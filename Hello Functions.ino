@@ -1,3 +1,7 @@
+//Soren A.
+//Hello Functions
+//Use functions to code a LED to blink
+
 #include <Servo.h>
 #include <NewPing.h>
 const int trigPin = 2;
@@ -10,7 +14,7 @@ int servoposition;
 void setup()
 {
 	Serial.begin(9600);
-	myservo.attach(5);
+	myservo.attach(5); //Says what pin the servo is attached to
 }
 
 void loop()
@@ -18,19 +22,19 @@ void loop()
 	
 	pinMode(trigPin, OUTPUT);
 	digitalWrite(trigPin, LOW);
-	delayMicroseconds(2);
+	delayMicroseconds(2);         //2 microsecond delay
 	digitalWrite(trigPin, HIGH);
-	delayMicroseconds(10);
+	delayMicroseconds(10);        //10 microsecond delay
 	digitalWrite(trigPin, LOW);
 	pinMode(echoPin, INPUT);
 	duration = pulseIn(echoPin, HIGH, 10000);
 	inches = microsecondsToInches(duration);
 	cm = microsecondsToCentimeters(duration);
-	Serial.print(inches);
-	Serial.print("in, ");
-	Serial.print(cm);
-	Serial.print("cm");
-	Serial.println();
+	Serial.print(inches);   //Gives the interval inches
+	Serial.print("in, "); //Gives the interval "in,"
+	Serial.print(cm);     //gives the interval cm
+	Serial.print("cm");   //gives the interval "cm"
+	Serial.println();     //Prints it in the serial monitor
 	if (inches != 0)
 	{
 		if (inches <= 4)
@@ -41,18 +45,18 @@ void loop()
 		{
 			myservo.write(pos);
 		}
-		delay(100);
+		delay(100);     //Wait 100 milliseconds
 	}
 }
 
 long microsecondsToInches(long microseconds)
 {
-	return microseconds / 74 / 2;
+	return microseconds / 74 / 2;    //gives the amount of microseconds back
 }
 
 long microsecondsToCentimeters(long microseconds)
 {
-	return microseconds / 29 / 2;
+	return microseconds / 29 / 2;     //gives the amount of microseconds back
 }
 
 void sweep(int NUM_OF_CYCLES)
@@ -61,11 +65,11 @@ void sweep(int NUM_OF_CYCLES)
 		for (pos = 0; pos < 180; pos += 1)
 		{
 			myservo.write(pos);
-			delay(2);
+			delay(2);     //wait 2 milliseconds
 		}
 	for (pos = 180; pos >= 1; pos -= 1)
 	{
 		myservo.write(pos);
-		delay(2);
+		delay(2);    //Wait 2 milliseconds
 	}
 }
